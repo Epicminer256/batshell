@@ -1,4 +1,10 @@
 @echo off
+
+::This is a test project of my cmd script 
+::that makes it more customizable and easy to use.
+
+::Have fun I guess
+
 :intro
 
 ::Message when you open up bashshell
