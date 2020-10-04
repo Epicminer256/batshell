@@ -100,12 +100,13 @@ set current=%cd%
 echo ^#---What do you want to launch--^>
 set /p app="#------> "
 cd %~p0
-if "%app%" == "" goto resetapp
+if "%app%" == "" goto resetappcommand
 start %app%
-goto resetapp
-
-:resetapp
+goto resetappcommand
+:resetappcommand
 cd %current%
 set app=
 set current=
 goto start
+
+
