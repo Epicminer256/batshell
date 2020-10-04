@@ -5,6 +5,9 @@ There is also a "app" command that will launches apps that are installed on your
 
 Also made a command called "cdconf" that changes the directory into the folder that the shell.bat is in.
 
+
+
+
 If you want to use this instead of the shell, here is how you kinda half-way install batShell
 
 1.) Make sure you have batShell somewhere else besides your downloads folder (it is reccomended to put batShell in its own folder in your documents folder)
@@ -22,5 +25,4 @@ If you want to use this instead of the shell, here is how you kinda half-way ins
 7.) Done! it should pop up in your start menu. If it isnt there you might need to relogin
 
 You can right click the shortcut and click "Properties" and click "Change Icons" to change the icon on the start menu
-
 Unfortanly I cant put a install script in due to there not having a shortcut command that the start menu will work with.
