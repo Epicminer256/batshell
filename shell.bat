@@ -1,3 +1,12 @@
+::=====================================================
+::=            Welcome to the batShell conf           =
+::=====================================================
+::If you are looking to add your command, there are two different ways...
+::
+::1.) make a batch file where batShell is located and launch it using the "app" command
+::
+::2.) Manualy edit a command below so you dont have to use the app command
+
 @echo off
 cd %HOMEPATH%
 cls
@@ -19,8 +28,11 @@ set /p exec="#------> "
 
 :indec
 
-::This will see if the command entered is the command that a function is assigned
-::If you are adding a command, assign it here to launch your function
+
+::RIGHT HERE IS WHERE YOU MAKE YOUR OWN COMMANDS EMBEDDED INTO BATSHEL
+::If you are adding a command, make it here.
+::If it contains multable lines, make it execute your function
+::To make a function, look on the bottem of this conf
 if "%exec%" == "ls" goto ls
 if "%exec%" == "help" goto help
 if "%exec%" == "reset" goto reset
@@ -144,17 +156,24 @@ goto start
 @echo on
 goto start
 
-::add your functions here, here is a templete
 
+
+
+
+
+::add your functions here, here is a small little templete
+::to get yourself started
+::
 ::  :functionname
-::  command(s) to launch
+::  echo command here
 ::  goto start
+
 
 ::For example
 ::I can set a command to the "Z" drive,
 ::change directory into a folder named "folder",
 ::and execute a jar file in java
-
+::
 ::  :serverlaunch
 ::  Z:
 ::  cd Z:\folder\
