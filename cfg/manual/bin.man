@@ -1,0 +1,2 @@
+bin:
+opens trash bin

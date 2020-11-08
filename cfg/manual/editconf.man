@@ -1,0 +1,2 @@
+editconf:
+would originaly edit the batshell directly, but now it edits the autoexec

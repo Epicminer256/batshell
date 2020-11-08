@@ -1,0 +1,1 @@
+notepad %startdir%\cfg\autoexec.cmd

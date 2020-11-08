@@ -1,0 +1,2 @@
+ls:
+the exact same as dir

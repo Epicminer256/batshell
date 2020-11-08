@@ -1,0 +1,2 @@
+cdconf:
+changes directory into the one batshell uses
