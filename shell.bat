@@ -159,7 +159,6 @@ goto start
 @echo on
 goto start
 
-::changes directory into the one batshell is in
 :addapp
 set addapp=
 set appc=
@@ -171,12 +170,13 @@ mkdir apps
 cd apps
 echo ^#---What name is the app-------^>
 set /p addapp="#------> "
+cls
 echo ^#---Type out the script that it---------^>
 echo ^#---launches when you start it up.------^>
 echo ^#---type !done when finished------------^>
 echo.> %addapp%.bat
 :appeditor
-set /p appc="#------> "
+set /p appc="#-> "
 if "%appc%" == "!done" goto doneedit
 echo %appc%>> %addapp%.bat
 goto appeditor
@@ -184,7 +184,7 @@ goto appeditor
 set addapp=
 set appc=
 cd %current%
-echo .
+cls
 echo ^#---now type 'app' to launch it---------^>
 goto start
 
