@@ -6,7 +6,6 @@
 ::1.) make a batch file where batShell is located and launch it using the "app" command
 ::
 ::2.) Manualy edit a command below so you dont have to use the app command
-
 @echo off
 cd %HOMEPATH%
 cls
@@ -18,6 +17,8 @@ echo.
 ::everything above is executed when 
 ::batShell is launched or reset
 
+if exist "%~p0\apps" goto start
+mkdir %~p0\apps
 
 ::This is your prompt
 :start
@@ -28,11 +29,11 @@ set /p exec="#------> "
 
 :indec
 
-
-::RIGHT HERE IS WHERE YOU MAKE YOUR OWN COMMANDS EMBEDDED INTO BATSHEL
-::If you are adding a command, make it here.
-::If it contains multable lines, make it execute your function
-::To make a function, look on the bottem of this conf
+::This will see if the command entered is the command that a function is assigned
+::If you are adding a command, assign it here to launch your function
+::
+::command templet
+::  if "%exec%" == "functionname" goto functionname
 if "%exec%" == "ls" goto ls
 if "%exec%" == "help" goto help
 if "%exec%" == "reset" goto reset
@@ -42,11 +43,9 @@ if "%exec%" == "cdconf" goto cdconf
 if "%exec%" == "editconf" goto editconf
 if "%exec%" == "app" goto startapp
 if "%exec%" == "debug" goto debug
-::command templet
-::  if "%exec%" == "functionname" goto functionname
+if "%exec%" == "addapp" goto addapp
 
 goto exec
-
 
 ::executes command and brings the prompt back
 :exec
@@ -71,7 +70,7 @@ echo ls:
 echo same as dir
 echo.
 echo reset:
-echo restarts batshell so that way commands can 
+echo restarts batshell so that way Keybinds can 
 echo be changed without reopening
 echo.
 echo editconf:
@@ -93,6 +92,9 @@ echo also cd ~/ works, but cd ~/dirname/
 echo doesnt work yet, maybe in the future it
 echo will be work by default
 echo.
+echo addapp:
+echo will add a app as a script for cmd
+echo aka a batch file
 goto start
 
 ::every command is bellow and what it executes
@@ -139,6 +141,7 @@ set current=%cd%
 echo ^#---What do you want to launch--^>
 set /p app="#------> "
 cd %~p0
+cd apps
 ::checkes if the app that is requesting to launch isnt blank
 if "%app%" == "" goto resetappcommand
 ::launches app
@@ -156,24 +159,46 @@ goto start
 @echo on
 goto start
 
+::changes directory into the one batshell is in
+:addapp
+set addapp=
+set appc=
+set current=%cd%
+cd %~p0
+if exist "apps" goto nameapp
+mkdir apps
+:nameapp
+cd apps
+echo ^#---What name is the app-------^>
+set /p addapp="#------> "
+echo ^#---Type out the script that it---------^>
+echo ^#---launches when you start it up.------^>
+echo ^#---type !done when finished------------^>
+echo.> %addapp%.bat
+:appeditor
+set /p appc="#------> "
+if "%appc%" == "!done" goto doneedit
+echo %appc%>> %addapp%.bat
+goto appeditor
+:doneedit
+set addapp=
+set appc=
+cd %current%
+echo .
+echo ^#---now type 'app' to launch it---------^>
+goto start
 
+::add your functions here, here is a templete
 
-
-
-
-::add your functions here, here is a small little templete
-::to get yourself started
-::
 ::  :functionname
-::  echo command here
+::  command(s) to launch
 ::  goto start
-
 
 ::For example
 ::I can set a command to the "Z" drive,
 ::change directory into a folder named "folder",
 ::and execute a jar file in java
-::
+
 ::  :serverlaunch
 ::  Z:
 ::  cd Z:\folder\
