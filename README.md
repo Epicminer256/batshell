@@ -17,8 +17,6 @@ If you want to use batshell instead of cmd, here is how you kinda half-way insta
 
 5.) Copy the newly created link and goto "%appdata%\Microsoft\Windows\Start Menu\Programs"
 
-6.) Make a folder called "batShell and paste the batShell shortcut into it"
-
-7.) Done! it should pop up in your start menu. If it isnt there you might need to relogin
+6.) Paste it in te folder and... Done! it should pop up in your start menu. If it isnt there you might need to relogin
 
 You can right click the shortcut and click "Properties" and click "Change Icons" to change the icon on the start menu
