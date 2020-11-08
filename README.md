@@ -1,12 +1,14 @@
 # batShell
 This is a small little batch script that works like cmd, but can be customized to work the way you want it. Commands like "ls" and "clear" work by default. batShell also has a feature to edit itself with the command "editconf" and can restart itself with "reset". 
 
-There is also a "app" command that will launches apps that are installed on your computer (like the program "chrome") and will also launch programs in the folder that the shell.bat file is in (if you have a file that is in the same folder as shell.bat called "image.png" or a link file called "steam"). Also there a command called "cdconf" that changes the directory into the folder that the shell.bat is in.
+There is also a "app" command that will launches apps that are installed on your computer (like the program "chrome") and will also launch files and programs in the folder "apps". Also there a command called "cdconf" that changes the directory into the folder that the shell.bat is in.
 
-if you want to add some commands, see the comments in the code itself as it says how to add them.
+if you want to add apps, use the "addapp" command. The "addapp" is a script editor for batshell that edits batshell.
+
+You can also add any file inside your app folder such as exe files, batch files, pictures, video files, links to websites, and shortcuts to apps.
 
 
-If you want to use this instead of the shell, here is how you kinda half-way install batShell
+If you want to use batshell instead of cmd, here is how you kinda half-way install batShell
 
 1.) Make sure you have batShell somewhere else besides your downloads folder (it is reccomended to put batShell in its own folder in your documents folder)
 
