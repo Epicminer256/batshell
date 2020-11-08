@@ -174,17 +174,10 @@ mkdir apps
 cd apps
 echo ^#---What name is the app-------^>
 set /p addapp="#------> "
-cls
-echo ^#---Type out the script that it---------^>
-echo ^#---launches when you start it up.------^>
-echo ^#---type !done when finished------------^>
-echo.> %addapp%.bat
-:appeditor
-set /p appc="#-> "
-if "%appc%" == "!done" goto doneedit
-echo %appc%>> %addapp%.bat
-goto appeditor
-:doneedit
+if exist "%~p0\apps\%addapp%.bat" goto appedit
+echo. > %addapp%.bat
+:appedit
+notepad %addapp%.bat
 set addapp=
 set appc=
 cd %current%
