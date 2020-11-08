@@ -1,12 +1,7 @@
 # batShell
-This is a small little batch script that works like cmd, but can be customized to work the way you want it. Commands like "ls" and "clear" work by default. batShell also has a feature to edit itself with the command "editconf" and can restart itself with "reset". 
+This is the unstable branch of batShell
 
-There is also a "app" command that will launches apps that are installed on your computer (like the program "chrome") and will also launch files and programs in the folder "apps". Also there a command called "cdconf" that changes the directory into the folder that the shell.bat is in.
-
-if you want to add apps, use the "addapp" command. The "addapp" is a script editor for batshell that edits batshell.
-
-You can also add any file inside your app folder such as exe files, batch files, pictures, video files, links to websites, and shortcuts to apps.
-
+The unstable version of batShell is made to easly customize your shell with ez and to conviently add programs to your command line without having to jump though hoops to get it working. If you want say a minecraft server. just type a command called "app", then type in what name your command will have. Then, a notepad window will pop up. put in your command in this window and save it. Now just type in the command.
 
 If you want to use batshell instead of cmd, here is how you kinda half-way install batShell
 
