@@ -1,9 +1,6 @@
 # batShell
-This is the unstable branch of batShell. This might be seperate from the main batShell due to the other shell being only one file
 
-  The unstable version of batShell is made to easly customize your shell with ez and to conviently add programs to your command line without having to jump though hoops to get it working. If you want say a minecraft server. just type a command called "app", then type in what name your command will have. Then, a notepad window will pop up. put in your command in this window and save it. Now just type in the command.
-
-  Want some cool colors on your prompt, just type "editconf" and change the color value there. Want the starting prompt message changed, edit the file in your cfg folder called "prompt.cmd"
+batShell is cmd but with custom easy to make commands and is fully customizable to suite your needs. You can use this to manage and launch servers, launch steam games, launch any app, make the command line look better, or even just for conviently using the command line. There will be some updates to make batShell exactly like cmd. The command "ls" doesnt like to work with paramiters at the moment, but I will fix this soon.
 
 If you want to use batshell instead of cmd, here is how you kinda half-way install batShell
 
