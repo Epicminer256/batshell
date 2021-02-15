@@ -5,7 +5,11 @@
 cd %HOMEPATH%
 
 ::changes the color of the prompt
-color 0A
+color 07
 
 ::brings up some starting text
-call "%~p0\prompt.cmd"
+::edit "cfg/prompt.cmd" for a custom startup prompt
+call "%startdir%\prompt.cmd"
+
+
+::Add other startup programs and scripts here
