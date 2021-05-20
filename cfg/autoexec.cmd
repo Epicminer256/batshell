@@ -9,7 +9,7 @@ color 07
 
 ::brings up some starting text
 ::edit "cfg/prompt.cmd" for a custom startup prompt
-call %startdir%cfg\prompt.cmd
+call "%startdir%cfg\prompt.cmd"
 
 
 ::Add other startup programs and scripts here
