@@ -5,8 +5,11 @@
 
 @echo off
 cls
-set startdir="%~p0"
-set startshell="%0"
+set startdir="%HOMEDRIVE%""%~p0"
+set startshell="%HOMEDRIVE%""%0"
+set startdir=%startdir:"=%
+set startshell=%startshell:"=%
+
 call "%~p0\cfg\autoexec.cmd"
 
 :start
