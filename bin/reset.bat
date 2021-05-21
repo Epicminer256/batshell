@@ -1,1 +1,2 @@
-%startshell%
+start "" "%startshell%"
+exit
