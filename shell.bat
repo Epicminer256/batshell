@@ -10,11 +10,11 @@ cls
 ::that will exit if batShell is outdated or overdated
 ::If you make your own verson of batShell, change the provider tag
 set batshellver=1.1
-set patchnum=1
+set patchnum=2
 set provider=batShell
 
 set startdir="%HOMEDRIVE%""%~p0"
-set startshell="%HOMEDRIVE%""%0"
+set startshell="%0"
 set startdir=%startdir:"=%
 set startshell=%startshell:"=%
 
