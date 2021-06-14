@@ -1,5 +1,5 @@
 ::Uncomment the line below this one to debug the shell
-echo on
+::echo on
 
 ::brings you to your home folder instead of system32
 cd "%HOMEPATH%"
