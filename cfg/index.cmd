@@ -7,16 +7,16 @@
 for /F %%G IN ("%exec%") do set "exec1=%%G"
 
 ::searches for .BAT files in the bin dir
-for /f "delims=" %%a in ('dir /B %startdir%\bin\*.bat') do if "%exec1%.bat" == "%%a" %startdir%bin\%exec%
+for /f "delims=" %%a in ('dir /B "%startdir%\bin\"*.bat') do if "%exec1%.bat" == "%%a" "%startdir%bin\"%exec%
 
 
 ::searches for .LNK files in the bin dir
-for /f "delims=" %%a in ('dir /B %startdir%\bin\*.lnk') do if "%exec1%.lnk" == "%%a" %startdir%bin\%exec%
+for /f "delims=" %%a in ('dir /B "%startdir%\bin\"*.lnk') do if "%exec1%.lnk" == "%%a" "%startdir%bin\"%exec%
 
 
 ::searches for .EXE files in the bin dir
 ::Uncomment the text bellow for EXE file support
-::for /f "delims=" %%a in ('dir /B %startdir%\bin\*.exe') do if "%exec1%.exe" == "%%a" %startdir%bin\%exec%
+for /f "delims=" %%a in ('dir /B %startdir%\bin\*.exe') do if "%exec1%.exe" == "%%a" "%startdir%bin\"%exec%
 
 
 

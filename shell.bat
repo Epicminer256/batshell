@@ -1,12 +1,12 @@
-::=====================================================
-::=            Welcome to the batShell conf           =
-::=====================================================
+::==============================
+::=            Welcome to the batShell            =
+::==============================
 
 
 @echo off
 cls
-set startdir="%~p0"
-set startshell="%0"
+set startdir=%~p0
+set startshell=%0
 call "%~p0\cfg\autoexec.cmd"
 
 :start
