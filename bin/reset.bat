@@ -1,2 +1,2 @@
-start "" "%startshell%"
+cmd /c "%startshell%"
 exit

@@ -1,0 +1,1 @@
+set themename=default.cmd 

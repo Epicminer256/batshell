@@ -1,0 +1,2 @@
+pwd: 
+lists what directory you are in

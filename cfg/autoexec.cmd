@@ -3,13 +3,17 @@
 
 ::brings you to your home folder instead of system32
 cd "%HOMEPATH%"
+::this is the command line prompt text, set this to some text if desired
+set shelltext=
 
-::changes the color of the prompt
-color 07
 
 ::brings up some starting text
-::edit "cfg/prompt.cmd" for a custom startup prompt
-call "%startdir%cfg\prompt.cmd"
+echo Machine %COMPUTERNAME% on %SessionName% 
+echo %DATE%
+echo.
+echo Welcome To Bash Shell User "%USERNAME%"
+echo To get started type "help"
+echo.
 
 
 ::Add other startup programs and scripts here
