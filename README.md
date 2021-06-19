@@ -18,4 +18,4 @@ If you want to use batshell instead of cmd, here is how you kinda half-way insta
 
 You can right click the shortcut and click "Properties" and click "Change Icons" to change the icon on the start menu
 
-Like batShell, try beta testing by switching to the "beta" branch
+If you like batShell, try beta testing by switching to the "beta" branch
