@@ -17,3 +17,5 @@ If you want to use batshell instead of cmd, here is how you kinda half-way insta
 6.) Paste it in te folder and... Done! it should pop up in your start menu. If it isnt there you might need to relogin
 
 You can right click the shortcut and click "Properties" and click "Change Icons" to change the icon on the start menu
+
+Like batShell, try beta testing by switching to the "beta" branch
