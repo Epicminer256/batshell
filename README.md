@@ -15,6 +15,6 @@
 
 #### 4.) Paste it in te folder and... Done! it should pop up in your start menu. If it isnt there you might need to relogin
 
-#Documentation
+# Documentation
 
 ![alt text](https://github.com/Epicminer256/batshell/raw/batshell/Documentation.png)
