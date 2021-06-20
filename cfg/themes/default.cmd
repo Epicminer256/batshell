@@ -1,4 +1,4 @@
-set prompttext=
+::set prompttext=
 
 ::These are compatibility values, mainly for compatibility on a lot of apps 
 ::and for certain apps to take avantage of certain themes
