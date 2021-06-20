@@ -14,13 +14,25 @@ set theme=%theme:"=%
 call "%theme%" values
 call "%~p0\cfg\autoexec.cmd"
 
-:start
+if "%input%" == "" goto startold
+if "%output%" == "" goto startold
+goto startNew
+
+:startOld
+set exec=
+echo ^#---%cd%--^>
+set /p exec="#---ThemeError---> "
+call "%~p0\cfg\index.cmd"
+echo.
+goto startOld
+
+:startNew
 set exec=
 call "%theme%" output "%cd%"
 call "%theme%" input exec "%shelltext%"
 call "%startdir%\cfg\index.cmd"
 echo.
-goto start
+goto startNew
 
 
 
