@@ -7,13 +7,14 @@
 ## If you want to use batshell instead of cmd, here is how you kinda half-way install batShell
 
 
-### 1.) Right click shell.bat and goto "Send To"
+#### 1.) Right click shell.bat and goto "Send To"
 
-### 2.) Send it to "Desktop (create link)" and rename shortcut to batShell
+#### 2.) Send it to "Desktop (create link)" and rename shortcut to batShell
 
-### 3.) Copy the newly created link and goto "%appdata%\Microsoft\Windows\Start Menu\Programs"
+#### 3.) Copy the newly created link and goto "%appdata%\Microsoft\Windows\Start Menu\Programs"
 
-### 4.) Paste it in te folder and... Done! it should pop up in your start menu. If it isnt there you might need to relogin
+#### 4.) Paste it in te folder and... Done! it should pop up in your start menu. If it isnt there you might need to relogin
 
+#Documentation
 
 ![alt text](https://github.com/Epicminer256/batshell/raw/batshell/Documentation.png)
