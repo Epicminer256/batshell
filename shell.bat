@@ -11,7 +11,7 @@ call "%~p0\cfg\theme.cmd"
 set theme="%startdir%\cfg\themes\%themename%"
 set theme=%theme:"=%
 ::this is to get the themes enviroment values
-call %theme% values
+call "%theme%" values
 call "%~p0\cfg\autoexec.cmd"
 
 :start
