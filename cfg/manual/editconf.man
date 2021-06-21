@@ -1,2 +1,0 @@
-editconf:
-Edits "cfg/autoexec.cmd" for batshell options

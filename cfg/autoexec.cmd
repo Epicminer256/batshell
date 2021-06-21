@@ -4,7 +4,7 @@
 ::brings you to your home folder instead of system32
 cd "%HOMEPATH%"
 ::this is the command line prompt text, set this to some text if desired
-set shelltext=
+::set shelltext=
 
 
 ::brings up some starting text

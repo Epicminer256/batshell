@@ -20,7 +20,6 @@ for /f "delims=" %%a in ('dir /B "%startdir%\bin\"') do if "%exec1%.exe" == "%%a
 
 
 ::searches for .CMD files in the bin dir
-::UNCOMMENT NEXT LINE  IF YOU HAVE EXE FILES, COMMENT IT IF YOU DONT HAVE ANY
 for /f "delims=" %%a in ('dir /B "%startdir%\bin\"') do if "%exec1%.exe" == "%%a" "%startdir%bin\"%exec%
 
 
