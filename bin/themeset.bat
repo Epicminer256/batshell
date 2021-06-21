@@ -1,8 +1,8 @@
 if "%1" == "" goto fail
 set name=%1
 set name=%name:"=%
-echo set themename=%name%.cmd>"%startdir%\cfg\theme.cmd" 
-"%startdir%\bin\reset.bat"
+echo set themename=%name%.cmd>"%cfg%\theme.cmd" 
+"%bin%\reset.bat"
 echo RESTART FAILED, manualy restart batShell so the theme can be set
 goto done
 
