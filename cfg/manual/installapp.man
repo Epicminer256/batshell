@@ -1,0 +1,2 @@
+installapp: 
+installs a app in batShell
