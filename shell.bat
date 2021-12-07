@@ -70,6 +70,9 @@ goto indexend
 :indexend
 if "%shellmode%" == "startOld" goto startOld
 if "%shellmode%" == "startNew" goto startNew
-echo INDEX ERROR
+echo batShell error! Some external program made it to where batShell can't tell if it should run with a theme or not.
+echo.
+echo Press a button to switch to a "no theme mode" or close this prompt and restart 
 pause
-exit
+set shellmode=startOld
+goto indexend
