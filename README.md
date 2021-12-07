@@ -4,8 +4,8 @@
 
 ![alt text](https://github.com/Epicminer256/batshell/raw/batshell/preview.png)
 
-## If you like this experience, check out a minimal version of batShell. This version is better for server launchers and app making, or if you are having trouble running this version of batShell.
-# https://github.com/Epicminer256/batShellBase
+## Alternitive Version of batShell
+#### If you like this experience, check out a minimal version of batShell. This version is better for server launchers and app making, or if you are having trouble running this version of batShell. https://github.com/Epicminer256/batShellBase
 
 ## If you want to use batshell instead of cmd, here is how you kinda half-way install batShell
 
