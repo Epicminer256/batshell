@@ -1,0 +1,7 @@
+mkdir "%startdir%\steamcmd"
+curl "https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip" -o "%startdir%\steamcmd.zip"
+tar -xf "%startdir%\steamcmd.zip" -C "%startdir%\steamcmd"
+del "%startdir%\steamcmd.zip"
+echo "%startdir%\steamcmd\steamcmd.exe" > "%startdir%\bin\steamcmd.bat"
+echo steamcmd: > "%startdir%\cfg\manual\steamcmd.man"
+echo Launches the local installed steamcmd >> "%startdir%\cfg\manual\steamcmd.man"

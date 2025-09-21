@@ -1,0 +1,2 @@
+install_batShell: 
+Installs batShell to start menu

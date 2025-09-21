@@ -1,0 +1,1 @@
+%startdir%\bin\install_bat.vbs %startdir%\shell.bat batShell

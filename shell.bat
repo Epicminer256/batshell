@@ -15,9 +15,11 @@ set themedir=%cfg%\themes
 call "%~p0\cfg\theme.cmd"
 set theme="%themedir%\%themename%"
 set theme=%theme:"=%
+
 ::this is to get the themes enviroment values
 call "%theme%" values
 call "%cfg%\autoexec.cmd"
+
 ::Will set the shell to use a theme or not
 if "%input%" == "" goto startold
 if "%output%" == "" goto startold
@@ -25,6 +27,7 @@ goto startNew
 
 ::below are the exec loops
 
+::If no theme
 :startOld
 set exec=
 set shellmode=startOld
@@ -34,6 +37,7 @@ goto index
 echo.
 goto startOld
 
+::If Theme
 :startNew
 set exec=
 set shellmode=startNew
@@ -44,7 +48,7 @@ echo.
 goto startNew
 
 
-::everything below this is a index check
+::Tries to find local command or shortcut before executing the command raw
 
 :index
 ::grabs first line of input

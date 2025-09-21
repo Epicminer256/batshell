@@ -8,10 +8,10 @@ cd "%HOMEPATH%"
 
 
 ::brings up some starting text
-echo Machine %COMPUTERNAME% on %SessionName% 
+echo Machine %COMPUTERNAME% on %SessionName% logged in as "%USERNAME%"
 echo %DATE%
 echo.
-echo Welcome To Bash Shell User "%USERNAME%"
+echo Welcome To batShell
 echo To get started type "help"
 echo.
 

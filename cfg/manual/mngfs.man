@@ -1,2 +1,2 @@
-mngfs
+mngfs:
 opens up file explorer into the batshell directory

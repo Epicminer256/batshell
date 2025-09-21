@@ -1,2 +1,2 @@
-debug:
+debug (on/off):
 turns on debugging mode by turning on echo
