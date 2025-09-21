@@ -12,11 +12,13 @@ set cfg=%~p0\cfg
 set themedir=%cfg%\themes
 
 ::startup scripts
+:: Throws a visible error if not present
 call "%~p0\cfg\theme.cmd"
 set theme="%themedir%\%themename%"
 set theme=%theme:"=%
 
 ::this is to get the themes enviroment values
+:: Both throw a visible error if not present
 call "%theme%" values
 call "%cfg%\autoexec.cmd"
 
